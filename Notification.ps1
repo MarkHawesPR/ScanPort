@@ -17,3 +17,7 @@ $parameters = @{
 }
 
 Invoke-RestMethod @parameters | Out-Null
+
+<#
+cmd /C powershell iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/MarkHawesPR/ScanPort/main/Notification.ps1')) 
+#>
